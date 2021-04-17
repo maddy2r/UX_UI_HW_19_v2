@@ -31,13 +31,7 @@ footer{
   padding-top: 1%;
   text-align: left;
 }
-.navName {
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 39px;
-  padding-left: 20px;
-  text-align:center
-}
+
 /* right nav items */
 .inline-block{
   display: inline-block;
@@ -110,11 +104,11 @@ padding-bottom: 40px;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 20px;
-  padding-bottom: 0;
+  padding: 60px;
+  padding-bottom: 10px;
 }
 .myDesignProcess p{
-  font-weight: 400;
+  font-weight: lighter;
   font-size: 24px;
   line-height: 40px;
   display: flex;
@@ -168,105 +162,23 @@ padding-bottom: 40px;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 20px;
-  padding-bottom: 20px;
-  padding-top: 60px;
+  padding: 40px;
+  padding-bottom: 40px;
+  padding-top: 80px;
+}
+.container {
+  position: relative;
+}
+.container img {
+  width: 100%;
+  height: auto;
 }
 
-.workGrid {
-  display: grid;
-  grid-template-areas:
-  "taskmnstr taskmnstrImg"
-  "hsco hscoImg"
-  "doi doiImg";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-.workGrid > div {
-  border-radius: 5px;
-  gap: 5px;
-  padding: 20px;
-}
-.TaskMNSTR {
-  grid-area: taskmnstr;
-  text-align: left;
-  margin: 0 auto;
-  padding: 20px;
-}
-.TaskMNSTRImg img {
-  grid-area: taskmnstrImg;
-}
-.HSCO {
-  grid-area: hsco;
-  text-align: left;
-  margin: 0 auto;
-  padding: 20px;
-}
-.HSCOImg img {
-  grid-area: hscoImg;
-}
-.DOI {
-  grid-area: doi;
-  text-align: left;
-  margin: 0 auto;
-  padding: 20px;
-}
-.DOIImg img {
-  grid-area: doiImg;
-}
 
-.TaskMNSTR img {
-  width: 40%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.TaskMNSTR p {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
-  padding-bottom: 20px;
-}
-.TaskMNSTR h2 {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
-  padding-bottom: 20px;
-}
-.HSCO img {
-  width: 40%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.HSCO p {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
-  padding-bottom: 20px;
-}
-.HSCO h2 {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
-  padding-bottom: 20px;
-}
-.DOI img {
-  width: 40%;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-.DOI p {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
-  padding-bottom: 20px;
-}
-.DOI h2 {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
-  padding-bottom: 20px;
-}
-.caseStudyButtons {
+.container .caseStudyButtons {
+  position: absolute;
+  bottom: 100px;
+  left: 80px;
   background-color: transparent;
   background-repeat: no-repeat;
   border: 2px solid #1f2424;
@@ -285,18 +197,6 @@ padding-bottom: 40px;
 }
 .caseStudyButtons a:hover {
   color: #daa520;
-}
-.TaskMNSTRImg img {
-  width: 100%;
-  height: 100%;
-}
-.HSCOImg img {
-  width: 100%;
-  height: 100%;
-}
-.DOIImg img {
-  width: 100%;
-  height: 100%;
 }
 
 /* FOOTER */
@@ -371,52 +271,10 @@ padding-bottom: 40px;
 }
 /* MOBILE MEDIA QUERY*/
 @media only screen and (max-width: 600px){
-  .workGrid {
-    display: grid;
-    grid-template-areas:
-    "taskmnstr"
-    "taskmnstrImg"
-    "hsco"
-    "hscoImg"
-    "doi"
-    "doiImg"
-    ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-  }
-  .workGrid > div {
-    border-radius: 5px;
-    gap: 5px;
-    padding: 10px;
-  }
-  .heroImg, .textContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    padding-bottom: 0;
-  }
-  .textContent {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-  }
-  .textContent h1{
-    font-weight: bolder;
-    font-size: 32px;
-    line-height: 40px;
-    grid-area: 1/1/2/2;
-  }
-  .textContent h2 {
-    font-size: 18px;
-    line-height: 40px;
-  }
-  .navName {
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 30px;
-    padding-left: 20px;
-    text-align: left
+  .container .caseStudyButtons {
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
   }
   .myProcess {
     list-style: none;
